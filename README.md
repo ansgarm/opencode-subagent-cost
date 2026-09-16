@@ -18,6 +18,8 @@ $0.01 + $0.09 subagents = $0.10
 
 The same whole-tree total is shown while viewing a subagent, so navigating into a child session does not make the reported run cost change.
 
+![OpenCode prompt showing the total cost of a session and its subagents](docs/screenshot.png)
+
 ## Install locally
 
 Build the plugin:
