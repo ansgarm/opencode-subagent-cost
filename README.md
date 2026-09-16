@@ -1,5 +1,9 @@
 # opencode-subagent-cost
 
+[![npm version](https://img.shields.io/npm/v/opencode-subagent-cost)](https://www.npmjs.com/package/opencode-subagent-cost)
+[![GitHub release](https://img.shields.io/github/v/release/ansgarm/opencode-subagent-cost)](https://github.com/ansgarm/opencode-subagent-cost/releases)
+[![CI](https://github.com/ansgarm/opencode-subagent-cost/actions/workflows/ci.yml/badge.svg)](https://github.com/ansgarm/opencode-subagent-cost/actions/workflows/ci.yml)
+
 An OpenCode TUI plugin that shows the cost of the main session and all of its transitive subagents as one total. It works around [anomalyco/opencode#11027](https://github.com/anomalyco/opencode/issues/11027).
 
 ## What it does
@@ -34,15 +38,21 @@ Add its TUI entrypoint to the project `.opencode/tui.json` or global `~/.config/
 
 Quit and restart OpenCode after changing `tui.json`.
 
-## Publish and install
+## Install from npm
 
-After publishing to npm, install it through OpenCode:
+Install the package through OpenCode:
 
 ```sh
 opencode plugin opencode-subagent-cost
 ```
 
+See the package on [npm](https://www.npmjs.com/package/opencode-subagent-cost) or the latest [GitHub release](https://github.com/ansgarm/opencode-subagent-cost/releases/latest).
+
 The package exposes only a TUI plugin. It does not mutate stored session costs or provider billing data.
+
+## Troubleshooting
+
+Restart OpenCode after changing `tui.json` or installing the plugin. If the cost is not shown, confirm that the plugin entrypoint is enabled and that the session has a non-zero cost.
 
 ## Compatibility
 
