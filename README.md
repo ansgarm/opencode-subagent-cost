@@ -45,7 +45,7 @@ Quit and restart OpenCode after changing `tui.json`.
 Install the package through OpenCode:
 
 ```sh
-opencode plugin opencode-subagent-cost
+opencode plugin --global opencode-subagent-cost
 ```
 
 See the package on [npm](https://www.npmjs.com/package/opencode-subagent-cost) or the latest [GitHub release](https://github.com/ansgarm/opencode-subagent-cost/releases/latest).
