@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "opencode-subagent-cost",
+  "version": "0.1.0",
+  "description": "Show OpenCode session cost including all subagents.",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./tui": "./dist/tui.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "tsc --noEmit && bun test",
+    "prepack": "bun run build"
+  },
+  "engines": {
+    "opencode": ">=1.18.31"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.18.31",
+    "@opentui/core": ">=0.4.5",
+    "@opentui/solid": ">=0.4.5",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "1.18.31",
+    "@opentui/core": "0.5.11",
+    "@opentui/solid": "0.5.11",
+    "@types/bun": "latest",
+    "solid-js": "1.9.12",
+    "typescript": "5.9.2"
+  },
+  "license": "MIT"
+}
