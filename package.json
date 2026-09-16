@@ -3,6 +3,20 @@
   "name": "opencode-subagent-cost",
   "version": "0.1.0",
   "description": "Show OpenCode session cost including all subagents.",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "tui",
+    "cost"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ansgarm/opencode-subagent-cost.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ansgarm/opencode-subagent-cost/issues"
+  },
+  "homepage": "https://github.com/ansgarm/opencode-subagent-cost#readme",
   "type": "module",
   "files": [
     "dist",
